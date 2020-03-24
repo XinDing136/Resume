@@ -55,6 +55,7 @@
   \RequirePackage{xeCJK}
 }{}
 
+
 %
 % Hyperref
 %
@@ -118,7 +119,7 @@
 %
 \definecolor{darkGrey}{HTML}{989898}
 %
-\colorlet{linkcolor}{basecolor}
+\colorlet{linkcolor}{black}
 \colorlet{accentcolor}{linkcolor!90}
 \colorlet{symbolcolor}{linkcolor!85}
 
@@ -297,7 +298,7 @@
 }
 % Render the name: \user{<firstanme>}{<lastname>}
 \newcommand*{\user}[2]{%
-  \color{accentcolor}{%
+  \color{black}{%
     \ifdef{\@zh}%
       {{\LARGE\bfseries #2 #1}}%
       {{\LARGE\bfseries #1 \textsc{#2}}}%
@@ -338,7 +339,7 @@
 \newcommand*{\sectionTitle}[2]{%
   \section{%
     \texorpdfstring%
-      {\color{accentcolor}{\icon{#2} \textbf{#1}}}%
+      {\color{black}{\icon{#2} \textbf{#1}}}%
       {#1}%
   }
 }
@@ -452,9 +453,9 @@
 %%
 
 \NewDocumentEnvironment{experiences}{}{%
-  \begin{longtable}{R{\leftcolwidth} | L{\rightcolwidth}}
+  \begin{tabular}{R{\leftcolwidth} | L{\rightcolwidth}}
 }{%
-  \end{longtable}
+  \end{tabular}
 }
 
 % \experience

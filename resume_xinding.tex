@@ -8,22 +8,20 @@
 % Chinese version
 \documentclass[zh]{resume}
 \usepackage{cite}
-\usepackage{graphicx}
+% \usepackage{graphicx}
+\usepackage{geometry}
 
+\geometry{a4paper,left=1cm,right=1cm,top=1cm,bottom=0.5cm}
 % Adjust icon size (default: same size as the text)
 \iconsize{\Large}
 
 % File information shown at the footer of the last page
 \fileinfo{%
-  \faCopyright{} 2020--2021, Xin Ding \hspace{0.5em}
-  \creativecommons{by}{4.0} \hspace{0.5em}
-  \githublink{liweitianux}{resume} \hspace{0.5em}
-  \faEdit{} \today
+  % \faCopyright{} 2020--2021, Xin Ding \hspace{0.5em}
+  % \creativecommons{by}{4.0} \hspace{0.5em}
+  % \githublink{liweitianux}{resume} \hspace{0.5em}
+  % \faEdit{} \today
 }
-
-
-
-
 
 \name{鑫}{丁}
 
@@ -34,18 +32,18 @@
 
 % \photo{<height>}{<filename>}
 
-\profile{
-  \mobile{136-6195-7798}
-  \email{xinding@mail.dhu.edu.cn}
-  \github{liweitianux} \\
-  \university{东华大学}
-  \degree{控制科学与工程 \textbullet 硕士}
-  \birthday{1996-06-10}
-  \home{安徽 \textbullet 宿州}
-  % Custom information:
-  % \icontext{<icon>}{<text>}
-  % \iconlink{<icon>}{<link>}{<text>}
-}
+% \profile{
+%   \faPhone \sffamily\large{ \ 136-6195-7798}
+%   \faEnvelope \sffamily\large{ \ xinding@mail.dhu.edu.cn}
+%   \github{liweitianux} \\
+%   \university{东华大学}
+%   \degree{控制科学与工程 \textbullet 硕士}
+%   \birthday{1996-10-13}
+%   \home{安徽 \textbullet 宿州}
+%   % Custom information:
+%   % \icontext{<icon>}{<text>}
+%   % \iconlink{<icon>}{<link>}{<text>}
+% }
 
 \begin{document}
 
@@ -53,67 +51,57 @@
   \begin{minipage}[h]{0.4\linewidth}%并排放两张图片，每张占行的0.4，下同 
   \begin{spacing}{1.5}
   \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \separator{1ex}
+    \hspace{10em}\centerline {\LARGE \textbf{丁鑫}}  \\
+    \separator{0.5ex}
+  % \href{http://github.com/howinloo}{\faUser \sffamily\large{ \ 王大陆}}  & \\
+  \hspace{5.5em} \faPhone { \ 136-6195-7798} \hspace{0.5em}
+  \faUser { \ 中共党员} \hspace{0.5em} 
+  \faBirthdayCake{ \ 1996-10-13}  \hspace{0.5em}
+
+  \faHome{ \ 上海$\cdot $松江} \\
+
+  \hspace{5.5em}\faEnvelope { \ xinding@mail.dhu.edu.cn} \hspace{0.5em}
+  \faGithub \href{https://github.com/XinDing136/}{ \ https://github.com/XinDing136}\\
+  % \faHeart { \ Java开发岗} \\
   
-  \href{http://github.com/howinloo}{\faUser \sffamily\large{ \ 王大陆}}  & \\
-  
-  \faHeart \sffamily\large{ \ 数据分析师}  & \\
-  
+
+ 
   % \faWechat \sffamily\large{ \ 277058248}  & \\
   
-  \faPhone \sffamily\large{ \  (+86)13600000000} & \\
+  % \faPhone \sffamily\large{ \  (+86)13600000000} & \\
   
-  \faEnvelope \sffamily\large{ \  277058248@qq.com}  & \\ 
+  % \faEnvelope \sffamily\large{ \  277058248@qq.com}  & \\ 
   \end{tabular*}
   \end{spacing}
   \end{minipage} 
   \qquad
   \begin{minipage}[h]{0.55\linewidth}
-  \rightline{\includegraphics[width=.28\textwidth]{photo144_192.jpg}}
+  \rightline{\includegraphics[width=.28\textwidth]{1.jpg}}
   %\caption{卢浩明}
   \end{minipage}
   \end{figure}
   \vspace{0.05mm}
 
-\makeheader
+% \makeheader
 
 %======================================================================
 % Summary & Objectives
 %======================================================================
-{\onehalfspacing\hspace{2em}%
-控制科学与工程专业（模式识别方向）保送研究生，有扎实的数学与统计学基础，
-擅长数据建模与分析，热衷计算机和网络技术，
-有 3 年的 Linux 使用经验，熟练掌握 Shell、Python 语言编程。
-积极实践自由开源精神，
-在 \link{https://github.com/liweitianux}{GitHub} 上分享多个项目，
-并积极参与其他多个开源项目。
-\par}
+% {\onehalfspacing\hspace{2em}%
+% 控制科学与工程专业（模式识别方向）保送研究生，有扎实的数学与统计学基础，
+% 擅长数据建模与分析，热衷计算机和网络技术，
+% 有 3 年的 Linux 使用经验，熟练掌握 Shell、Python 语言编程。
+% 积极实践自由开源精神，
+% 在 \link{https://github.com/liweitianux}{GitHub} 上分享多个项目，
+% 并积极参与其他多个开源项目。
+% \par}
 
 %======================================================================
-\sectionTitle{技能和语言}{\faWrench}
-%======================================================================
-\begin{competences}
-  \comptence{操作系统}{%
-    \icon{\faLinux} Linux （3 年）}
-    
-  \comptence{编程}{%
-    java ，Python, C, Shell
-  }
-  \comptence{工具}{%
-    SSH, Git, Photoshop
-  }
-  \comptence{数据分析}{%
-   Django; Matplotlib, ggplot2; Keras, Scikit-learn
-  }
-  \comptence{网站开发}{%
-    Flask, JavaScript, jQuery, Bootstrap, redis, MySQL, Spring,Struts2
-  }
-  \comptence{\icon{\faLanguage} 语言}{
-    \textbf{英语} （CET-6）
-  }
-\end{competences}
+
 
 %======================================================================
-\sectionTitle{教育背景}{\faGraduationCap}
+\sectionTitle{\large 教育背景}{\large \faGraduationCap}
 %======================================================================
 \begin{educations}
   \education%
@@ -135,34 +123,45 @@
 \end{educations}
 
 %======================================================================
-\sectionTitle{计算机技能}{\faCogs}
-%======================================================================
-\begin{itemize}  
-  \item 搭建并管理课题组的工作站、计算集群（4 节点）和网络设备  
-  \item 设计并开发了思科的\enquote{自动化生成测试脚本工具}整个项目
-    （Django, Bootstrap, jQuery）
-  \item 参与并开发实验室聚酯纤维仿真系统的时序数据聚类算法并制作供调用的API接口（java kera Tensorflow Scikit-learn）
-\end{itemize}
+% \sectionTitle{计算机技能}{\faCogs}
+% %======================================================================
+% \begin{itemize}  
+%   \item 搭建并管理课题组的工作站、计算集群（4 节点）和网络设备  
+%   \item 设计并开发了思科的\enquote{自动化生成测试脚本工具}整个项目
+%     （Django, Bootstrap, jQuery）
+%   \item 参与并开发实验室聚酯纤维仿真系统的时序数据聚类算法并制作供调用的API接口（java kera Tensorflow Scikit-learn）
+% \end{itemize}
 
 %======================================================================
-\sectionTitle{项目经历}{\faCode}
+\sectionTitle{\large 项目经历}{\large \faCode}
 %======================================================================
-\textbf{聚酯、聚酰胺纤维柔性化高效制备技术}
-\begin{itemize}
-  \item 针对聚酰胺合成过程中的压力、温度、特性黏度等时序数据，设计了一种新颖的无监督的时序数据聚类算法（已撰写论文，投稿中）
-  \item 根据项目需求，采用python与java建立WebService的模式，通过JSON格式进行数据的传输，将机器学习算法封装成程序接口 供项目调用
+% \textbf{聚酯、聚酰胺纤维柔性化高效制备技术}
+% \begin{itemize}
+%   \item 针对聚酰胺合成过程中的压力、温度、特性黏度等时序数据，设计了一种新颖的无监督的时序数据聚类算法（已撰写论文，投稿中）
+%   \item 根据项目需求，采用python与java建立WebService的模式，通过JSON格式进行数据的传输，将机器学习算法封装成程序接口 供项目调用
   
-\end{itemize}
+% \end{itemize}
 
+\begin{experiences}
+  % \textbf{聚酯、聚酰胺纤维柔性化高效制备技术}
+  \experience%
+    [2018.10]%
+    {2019.12}%
+    {\textbf{ 聚酯、聚酰胺纤维柔性化高效制备技术}}%
+    [\begin{itemize}
+      \item 针对聚酰胺合成过程中的压力、温度、特性黏度等时序数据，设计了一种新颖的无监督的时序数据聚类算法（已撰写论文，投稿中）
+      \item 根据项目需求，采用python与java建立WebService的模式，通过JSON格式进行数据的传输，将机器学习算法封装成程序接口 供项目调用
+    \end{itemize}] 
+\end{experiences}
 
 %======================================================================
-\sectionTitle{实习经历}{\faBriefcase}
+\sectionTitle{\large 实习经历}{\large \faBriefcase}
 %======================================================================
 \begin{experiences}
   \experience%
     [2017.12]%
     {2018.09}%
-    {测试开发工程师 @ 思科中国研发中心}%
+    {\textbf{测试开发工程师 @ 思科中国研发中心}}%
     [\begin{itemize}
       \item 基于Django框架，前端使用BootStrap+Jquery，构成自动化脚本生成的操作界面，后端基于python对测试设备的C++的底层函数进行封装调用
       \item 根据用户需求，设计并实现测试设备的多模式编辑：a.图形化操作 b.JSON脚本编辑
@@ -173,20 +172,39 @@
 
 
 %======================================================================
-\sectionTitle{社团和组织经历}{\faAtom}
+\sectionTitle{\large 社团和组织经历}{\large \faAtom}
 %======================================================================
-\textbf{182硕团支书/党支部组织委员}
-\begin{itemize}
-  \item 带领党支部党员，在农民工小学进行垃圾分类宣传教育活动，党支部凭此项活动获得了东华大学“十个一”特色党支部的称号
-  \item 统筹班级推优工作，确保推优工作顺利进行
-\end{itemize}
+% \textbf{182硕团支书/党支部组织委员}
+% \begin{itemize}
+%   \item 带领党支部党员，在农民工小学进行垃圾分类宣传教育活动，并获得了东华大学“十个一”特色党支部的称号
+%   % \item 统筹班级推优工作，确保推优工作顺利进行
+% \end{itemize}
+\begin{experiences}
+  % \textbf{聚酯、聚酰胺纤维柔性化高效制备技术}
+  \experience%
+    [2018.9]%
+    {至今}%
+    {\textbf{182硕团支书/党支部组织委员}}%
+    [\begin{itemize}
+        \item 带领党支部党员，在农民工小学进行垃圾分类宣传教育活动，并获得了东华大学“十个一”特色党支部的称号
+        \item 统筹班级推优工作，确保推优工作顺利进行
+    \end{itemize}] 
+  \separator{0.5ex}
+  \experience%
+    [2015.9]%
+    {2016.9}%
+    {\textbf{东华大学志愿者管理中心}}%
+    [\begin{itemize}
+      \item 负责各项志愿者活动后期宣传工作，实时跟进各个活动的情况，撰写新闻稿进行宣传推广，吸引更多的人加入志愿者的行列，并获得了东华大学星级志愿者称号 
+    \end{itemize}] 
+\end{experiences}
 
-\textbf{ 东华大学志愿者管理中心}
-\begin{itemize}
-  \item 负责各项志愿者活动后期宣传工作，实时跟进各个活动的情况，撰写新闻稿进行宣传推广，吸引更多的人加入志愿者的行列，并获得了东华大学星级志愿者称号 
-\end{itemize}
+% \textbf{ 东华大学志愿者管理中心}
+% \begin{itemize}
+%   \item 负责各项志愿者活动后期宣传工作，实时跟进各个活动的情况，撰写新闻稿进行宣传推广，吸引更多的人加入志愿者的行列，并获得了东华大学星级志愿者称号 
+% \end{itemize}
 
-\sectionTitle{荣誉奖项}{\faCrown}
+\sectionTitle{\large 荣誉奖项}{\large \faCrown}
 \begin{itemize}
   \item 东华大学优秀学生干部(2019)
   \item 上海市优秀毕业生(2018)
@@ -195,6 +213,54 @@
   \item 东华大学奖学金(2014-2016)
 \end{itemize}
 
+\sectionTitle{\large 技能和语言}{\large \faWrench}
+%======================================================================
+% \icon{\faLinux} Linux}
+% \hspace{3em}{ \ Linux, MySQL, Spring, Struts2, Redis,Tensorflow,Keras,Django,JavaScript, jQuery, Bootstrap,} \\
+% \icon{\faLanguage}{语言}{
+%     \textbf{英语} （CET-6）
+%   }
+\hspace{1em} \faDesktop{ \ \ 技能}{
+  Linux, MySQL, Spring, Struts2, Redis,Tensorflow,Keras,Django,Git 
+}
+
+\hspace{1em} \faLanguage{ \ \ 语言}{
+      英语（CET-6)
+  }
+  % \begin{competences}
+%   % \comptence{}{%
+%   %   \icon{\faLinux} Linux （3 年）}
+    
+%   \comptence{\faDesktop \ \ \  技能}{%
+%   Linux, MySQL, Spring, Struts2, Redis,Tensorflow,Keras,Django,Git
+%   }
+%   % \comptence{工具}{%
+%   %   SSH, Git, Photoshop
+%   % }
+%   % \comptence{数据分析}{%
+%   %  Django; Matplotlib, ggplot2; Keras, Scikit-learn
+%   % }
+%   % \comptence{网站开发}{%
+%   %   Flask, JavaScript, jQuery, Bootstrap, redis, MySQL, Spring,Struts2
+%   % }
+%   \comptence{\icon{\faLanguage} \ 语言}{
+%     \textbf{英语} （CET-6）
+%   }
+% \end{competences}
+% \begin{competences}
+  % \comptence{\ }{%
+  %   SSH, Git, Photoshop
+  % }
+  % \comptence{数据分析}{%
+  %  Django; Matplotlib, ggplot2; Keras, Scikit-learn
+  % }
+  % \comptence{网站开发}{%
+  %   Flask, JavaScript, jQuery, Bootstrap, redis, MySQL, Spring,Struts2
+  % }
+  % \comptence{\
+  % ）
+  % }
+  % \end{competences}
 \end{document}
 
 % 图标更换的位置信息 https://fontawesome.com/icons?d=gallery&s=solid&m=free
