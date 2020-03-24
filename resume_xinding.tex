@@ -1,0 +1,200 @@
+%%
+%% Copyright (c) 2018-2019 Weitian LI <wt@liwt.net>
+%% CC BY 4.0 License
+%%
+%% Created: 2018-04-11
+%%
+
+% Chinese version
+\documentclass[zh]{resume}
+\usepackage{cite}
+\usepackage{graphicx}
+
+% Adjust icon size (default: same size as the text)
+\iconsize{\Large}
+
+% File information shown at the footer of the last page
+\fileinfo{%
+  \faCopyright{} 2020--2021, Xin Ding \hspace{0.5em}
+  \creativecommons{by}{4.0} \hspace{0.5em}
+  \githublink{liweitianux}{resume} \hspace{0.5em}
+  \faEdit{} \today
+}
+
+
+
+
+
+\name{鑫}{丁}
+
+\keywords{BSD, Linux, Programming, Python, C, Shell, DevOps, SysAdmin}
+
+% \tagline{\icon{\faBinoculars}} <position-to-look-for>}
+% \tagline{<current-position>}
+
+% \photo{<height>}{<filename>}
+
+\profile{
+  \mobile{136-6195-7798}
+  \email{xinding@mail.dhu.edu.cn}
+  \github{liweitianux} \\
+  \university{东华大学}
+  \degree{控制科学与工程 \textbullet 硕士}
+  \birthday{1996-06-10}
+  \home{安徽 \textbullet 宿州}
+  % Custom information:
+  % \icontext{<icon>}{<text>}
+  % \iconlink{<icon>}{<link>}{<text>}
+}
+
+\begin{document}
+
+\begin{figure}[h]
+  \begin{minipage}[h]{0.4\linewidth}%并排放两张图片，每张占行的0.4，下同 
+  \begin{spacing}{1.5}
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  
+  \href{http://github.com/howinloo}{\faUser \sffamily\large{ \ 王大陆}}  & \\
+  
+  \faHeart \sffamily\large{ \ 数据分析师}  & \\
+  
+  % \faWechat \sffamily\large{ \ 277058248}  & \\
+  
+  \faPhone \sffamily\large{ \  (+86)13600000000} & \\
+  
+  \faEnvelope \sffamily\large{ \  277058248@qq.com}  & \\ 
+  \end{tabular*}
+  \end{spacing}
+  \end{minipage} 
+  \qquad
+  \begin{minipage}[h]{0.55\linewidth}
+  \rightline{\includegraphics[width=.28\textwidth]{photo144_192.jpg}}
+  %\caption{卢浩明}
+  \end{minipage}
+  \end{figure}
+  \vspace{0.05mm}
+
+\makeheader
+
+%======================================================================
+% Summary & Objectives
+%======================================================================
+{\onehalfspacing\hspace{2em}%
+控制科学与工程专业（模式识别方向）保送研究生，有扎实的数学与统计学基础，
+擅长数据建模与分析，热衷计算机和网络技术，
+有 3 年的 Linux 使用经验，熟练掌握 Shell、Python 语言编程。
+积极实践自由开源精神，
+在 \link{https://github.com/liweitianux}{GitHub} 上分享多个项目，
+并积极参与其他多个开源项目。
+\par}
+
+%======================================================================
+\sectionTitle{技能和语言}{\faWrench}
+%======================================================================
+\begin{competences}
+  \comptence{操作系统}{%
+    \icon{\faLinux} Linux （3 年）}
+    
+  \comptence{编程}{%
+    java ，Python, C, Shell
+  }
+  \comptence{工具}{%
+    SSH, Git, Photoshop
+  }
+  \comptence{数据分析}{%
+   Django; Matplotlib, ggplot2; Keras, Scikit-learn
+  }
+  \comptence{网站开发}{%
+    Flask, JavaScript, jQuery, Bootstrap, redis, MySQL, Spring,Struts2
+  }
+  \comptence{\icon{\faLanguage} 语言}{
+    \textbf{英语} （CET-6）
+  }
+\end{competences}
+
+%======================================================================
+\sectionTitle{教育背景}{\faGraduationCap}
+%======================================================================
+\begin{educations}
+  \education%
+    {2018.09}%
+    [2021.03]%
+    {东华大学}%
+    {信息科学与技术学院}%
+    {控制科学与工程}%
+    {硕士}
+
+  \separator{0.5ex}
+  \education%
+    {2014.09}%
+    [2018.06]%
+    {东华大学}%
+    {信息科学与技术学院}%
+    {自动化}%
+    {学士}
+\end{educations}
+
+%======================================================================
+\sectionTitle{计算机技能}{\faCogs}
+%======================================================================
+\begin{itemize}  
+  \item 搭建并管理课题组的工作站、计算集群（4 节点）和网络设备  
+  \item 设计并开发了思科的\enquote{自动化生成测试脚本工具}整个项目
+    （Django, Bootstrap, jQuery）
+  \item 参与并开发实验室聚酯纤维仿真系统的时序数据聚类算法并制作供调用的API接口（java kera Tensorflow Scikit-learn）
+\end{itemize}
+
+%======================================================================
+\sectionTitle{项目经历}{\faCode}
+%======================================================================
+\textbf{聚酯、聚酰胺纤维柔性化高效制备技术}
+\begin{itemize}
+  \item 针对聚酰胺合成过程中的压力、温度、特性黏度等时序数据，设计了一种新颖的无监督的时序数据聚类算法（已撰写论文，投稿中）
+  \item 根据项目需求，采用python与java建立WebService的模式，通过JSON格式进行数据的传输，将机器学习算法封装成程序接口 供项目调用
+  
+\end{itemize}
+
+
+%======================================================================
+\sectionTitle{实习经历}{\faBriefcase}
+%======================================================================
+\begin{experiences}
+  \experience%
+    [2017.12]%
+    {2018.09}%
+    {测试开发工程师 @ 思科中国研发中心}%
+    [\begin{itemize}
+      \item 基于Django框架，前端使用BootStrap+Jquery，构成自动化脚本生成的操作界面，后端基于python对测试设备的C++的底层函数进行封装调用
+      \item 根据用户需求，设计并实现测试设备的多模式编辑：a.图形化操作 b.JSON脚本编辑
+      \item 使用joint.js 实现了设备的图形化拖拽编辑
+      \item 针对原有开发的分辨率不适配问题，采用流式布局+弹性布局的解决方案
+    \end{itemize}] 
+\end{experiences}
+
+
+%======================================================================
+\sectionTitle{社团和组织经历}{\faAtom}
+%======================================================================
+\textbf{182硕团支书/党支部组织委员}
+\begin{itemize}
+  \item 带领党支部党员，在农民工小学进行垃圾分类宣传教育活动，党支部凭此项活动获得了东华大学“十个一”特色党支部的称号
+  \item 统筹班级推优工作，确保推优工作顺利进行
+\end{itemize}
+
+\textbf{ 东华大学志愿者管理中心}
+\begin{itemize}
+  \item 负责各项志愿者活动后期宣传工作，实时跟进各个活动的情况，撰写新闻稿进行宣传推广，吸引更多的人加入志愿者的行列，并获得了东华大学星级志愿者称号 
+\end{itemize}
+
+\sectionTitle{荣誉奖项}{\faCrown}
+\begin{itemize}
+  \item 东华大学优秀学生干部(2019)
+  \item 上海市优秀毕业生(2018)
+  \item 美国大学生数学建模竞赛二等奖(2017)
+  \item 东华大学智能车竞赛二等奖(2017)
+  \item 东华大学奖学金(2014-2016)
+\end{itemize}
+
+\end{document}
+
+% 图标更换的位置信息 https://fontawesome.com/icons?d=gallery&s=solid&m=free
