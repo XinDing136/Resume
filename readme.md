@@ -47,7 +47,7 @@ Of course, you can use the fonts you prefer by modifying the template directly.
 However, you may need to tweak the column width accordingly.
 
 
-compiling environment
+Compiling Environment
 --------------
 
 TexLive2019
